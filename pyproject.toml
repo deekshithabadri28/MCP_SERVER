@@ -1,0 +1,30 @@
+[project]
+name = "agentic-ai-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "minime289", email = "d351434@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ddgs>=9.16.1",
+    "duckduckgo-search>=8.1.1",
+    "fastmcp>=4.1.6",
+    "langchain>=1.4.9",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.2",
+    "langchain-mcp-adapters>=0.3.1",
+    "langchain-openai>=1.7.4",
+    "langgraph>=1.2.20",
+    "mcp>=2.3.0",
+    "pypdf>=6.21.4",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+agentic-ai-mcp = "agentic_ai_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
